@@ -14,7 +14,6 @@ router.get('/tweet', function(req, res, next) {
     folderName: '',
     csrfToken: req.csrfToken(),
     language: 'engish',
-    campaign: 'promotion',
   });
 });
 

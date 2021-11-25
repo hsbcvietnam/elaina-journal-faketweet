@@ -5,12 +5,17 @@ block variables
     var title = "Elaina's Journal | FakeTweet";
     //- MAKE SURE THE CORRECT LANGUAGE IS SELECTED, it either english or vietnamese
     var language = "english";
-    campaignId = campaignId ? '&CampaignID=' + campaignId : "";
 
 block blockMeta
-  meta(property="og:description" content="Elaina just tweeted on FakeTweet")
+  meta(property="og:url" content="https://elaina-journal-faketweet.herokuapp.com/tweet")
+  meta(property="og:title" content="Elaina's Journal | FakeTweet")
+  meta(name="og:description" content="Elaina just tweeted on FakeTweet")
   meta(name="description" content="Elaina just tweeted on FakeTweet")
-  meta(property="og:image" content="imageFolder + '/rocket/preview.jpg'")
+  meta(property="og:image" content="https://hsbcvietnam.github.io/elaina-journal-faketweet/public/images/rocket/preview.jpg")
+  meta(property="og:site_name" content="Elaina's Journal")
+  meta(property="og:type" content="website")
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name="twitter:creator" content="@EMTElaina")
 
 block blockCSS
   link(rel="stylesheet", href!= cssFolder + "/selectize.css")
