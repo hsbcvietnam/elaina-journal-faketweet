@@ -11,7 +11,7 @@ block blockMeta
   meta(property="og:title" content="Elaina's Journal | FakeTweet")
   meta(name="og:description" content="Elaina just tweeted on FakeTweet")
   meta(name="description" content="Elaina just tweeted on FakeTweet")
-  meta(property="og:image" content="https://hsbcvietnam.github.io/elaina-journal-faketweet/public/images/rocket/preview.jpg")
+  meta(property="og:image" content="https://hsbcvietnam.github.io/elaina-journal-faketweet/public/images/rocket/preview1.jpg")
   meta(property="og:site_name" content="Elaina's Journal")
   meta(property="og:type" content="website")
   meta(name="twitter:card" content="summary_large_image")
@@ -36,50 +36,8 @@ block blockJS
 
   script(type='text/javascript').
     var pageOption = {
-    language: 'vietnamese',
+    language: 'english',
     };
-    if (document.URL.indexOf("pid=") != -1 || document.URL.indexOf("cid=") != -1) {
-    jQuery("a[href*=' /1/2/vnm2/lead/card/the-tin-dung-hsbc-credit-card']").map(function() {
-    $(this).attr("href", $(this).attr("href").split("?")[0] + "?" + document.URL.match(/[^&?]*?=[^&?]*/)[0])
-    });
-    };
-    /*dash selection*/
-    $('#select-hometown').selectize();
-    $('#select-income').selectize();
-
-block blockTealiumHead
-  //- Start - Tealium iQ (sync.js)
-  script(src='//tags.tiqcdn.com/utag/hsbc/vn-rbwm/prod/utag.sync.js')
-  //- End - Tealium iQ (sync.js)
-
-block blockTealium
-  script.
-    // Universal Data Object
-    //- PLEASE REFER THE example.pdf FOR UDO VALUE.
-    window.utag_data = {
-      "page_url"            : location.protocol + '//' + document.domain + location.pathname + location.hash,
-      "page_name"           : location.pathname.replace(/\/(en|vn)/g, "").replace(/(https|http):\/\//, "").replace(/^/, "pws").replace(/\//g, ":").replace(/:$/, "").replace(/-/g, " "),
-      "page_language"       : pageOption.language == "vietnamese" ? "vn_vi" : "en",
-      "page_type"                  : "campaign",
-      "page_security_level" : "0",
-      "page_business_line"  : "rbwm",
-      "page_customer_group" : "general",
-      "site_section"        : "pws",
-      "product_category"    : "credit cards",
-      "product_subcategory" : "primary cards",
-      "product_id": "visa-classic, visa-platinum, visa-cash-back"
-    };
-      window.utag_data.page_category = window.utag_data.page_name.split(":")[1];
-      window.utag_data.page_subcategory = window.utag_data.page_name.split(":")[2];
-    //- Loading Tealium
-    (function(a,b,c,d,e){
-      // Change the 'production.domain.com' into the acutal application production domain.
-      b=document;e=b.domain==('card.apply.hsbc.com.vn')?'prod':'qa';
-      a='//tags.tiqcdn.com/utag/hsbc/vn-rbwm/' + e + '/utag.js';
-      c='script';d=b.createElement(c);d.src=a;
-      d.type='text/java'+c;d.async=true;
-      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
-    })();
 
 block content
   .container-fluid.chs_border(style='background-color: #FFFFFF;')
