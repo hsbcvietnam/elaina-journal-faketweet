@@ -2,19 +2,21 @@
 extends layout
 block variables
   -
-    var title = "Ưu đãi mở Thẻ Tín Dụng HSBC trực tuyến | HSBC VN";
+    var title = "Elaina's Journal | FakeTweet";
     //- MAKE SURE THE CORRECT LANGUAGE IS SELECTED, it either english or vietnamese
-    var language = "vietnamese";
+    var language = "english";
     campaignId = campaignId ? '&CampaignID=' + campaignId : "";
 
 block blockMeta
-  meta(name="description" content="Hoàn tiền 20% khi mở thẻ, giảm phí thường niên năm đầu lên đến 75%, trả góp 0% lãi suất, hoàn tiền mỗi tháng, tích điểm đổi quà và hàng trăm ưu đãi giảm giá quanh năm. Đăng ký làm thẻ ngay!")
+  meta(property="og:description" content="Elaina just tweeted on FakeTweet")
+  meta(name="description" content="Elaina just tweeted on FakeTweet")
+  meta(property="og:image" content="imageFolder + '/rocket/preview.jpg'")
 
 block blockCSS
   link(rel="stylesheet", href!= cssFolder + "/selectize.css")
   link(rel="stylesheet", href!= cssFolder + "/chs_custom.css")
   link(rel="stylesheet", href!= cssFolder + "/style.css?v=006")
-  link(rel='canonical', href='https://card.apply.hsbc.com.vn/uu-dai-mo-the-tin-dung-HSBC/vn')
+  link(rel='canonical', href='')
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
 
@@ -243,7 +245,7 @@ block content
                       strong  55 ngày
                     li Bảo hiểm mua sắm trực tuyến Visa  lên đến
                       strong  4,6 triệu VND
-                    li Bảo hiểm Du lịch toàn cầu đến 
+                    li Bảo hiểm Du lịch toàn cầu đến
                       strong  11,5 tỷ VND
                     li Hotline riêng phục vụ 24/7
 
@@ -319,7 +321,7 @@ block content
                       strong 1.000 VND chi tiêu
                       | &nbsp;= 1 Điểm
                     li Thời hạn không tính lãi đến&nbsp;
-                      strong 45 ngày 
+                      strong 45 ngày
                     li Trả góp
                       strong  0%
                       |  lãi suất đến 12 tháng
