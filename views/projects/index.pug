@@ -42,7 +42,11 @@ block content
   .container-fluid
     .row
       .chs_bg_img_left
-      .chs_navbar
+      .chs_navbar_small_screen
+        .vertical_center
+          .chs_link
+            a(href='https://www.facebook.com/elaina.journal' target='_blank') Elaina's Journal
+      .chs_navbar_wide_screen
         .vertical_center
           ul
             li.chs_link
@@ -66,8 +70,19 @@ block content
                 .chs_tweet_img
                   img(src='https://hsbcvietnam.github.io/elaina-journal-faketweet/public/images/rocket/tweet.jpg')
         .col-sm-3
+      .chs_small_screen
+        .col-xs-12
+          .row
+            .col-xs-12.chs_poster_area
+              .vertical_center.chs_profile_pic
+                img(src='https://hsbcvietnam.github.io/elaina-journal-faketweet/public/images/rocket/profile_pic_elaina.jpg')
+              .vertical_center.chs_username_area
+                .chs_username_poster Wandering Witch Elaina
+                .chs_handle_poster @Elaina
+          .row
+            .col-xs-12.chs_content_area
+              .chs_tweet_area
+                .chs_tweet_text イレイナ
+                .chs_tweet_img
+                  img(src='https://hsbcvietnam.github.io/elaina-journal-faketweet/public/images/rocket/tweet.jpg')
       .chs_bg_img_right
-      .col-xs-12.chs_small_screen
-        .row
-          .col-xs-12.chs_navbar.chs_link(align="center")
-            a(href='https://www.facebook.com/elaina.journal' target='_blank') Elaina's Journal

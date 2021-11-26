@@ -60,24 +60,17 @@ html, body {
   width: 25%;
 }
 
-.chs_navbar {
-  overflow: hidden;
-  height: 70px;
-  background-color: #FFFFFF;
-  border-bottom: 2px solid #1d9bf0;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  left: 25%;
-  width: 50%;
-}
-
 .chs_wide_screen {
   position: relative;
   top: 70px;
 }
 
-.chs_navbar ul {
+.chs_small_screen {
+  position: relative;
+  top: 70px;
+}
+
+.chs_navbar_wide_screen ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -86,7 +79,7 @@ html, body {
   justify-content: center;
 }
 
-.chs_navbar li {
+.chs_navbar_wide_screen li {
   margin: 0 4rem;
 }
 
@@ -106,7 +99,7 @@ html, body {
   text-decoration: none;
 }
 
-.chs_navbar a {
+.chs_navbar_wide_screen a {
   overflow: hidden;
 }
 
@@ -119,7 +112,7 @@ html, body {
   width: 70px;
   height: 70px;
   position: absolute;
-  left: 20px;
+  left: 50px;
 }
 
 .chs_profile_pic img {
@@ -131,7 +124,7 @@ html, body {
 
 .chs_username_area {
   position: absolute;
-  left: 105px;
+  left: 135px;
 }
 
 .chs_username_poster {
@@ -154,8 +147,8 @@ html, body {
 
 .chs_tweet_area {
   position: absolute;
-  left: 20px;
-  right: 20px;
+  left: 50px;
+  right: 50px;
 }
 
 .chs_tweet_text {
@@ -204,7 +197,7 @@ strong {
 
 }
 @media (min-width:800px) {
-  .chs_navbar a::after {
+  .chs_navbar_wide_screen a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -216,13 +209,27 @@ strong {
     transform: translate3d(-100%, 0, 0);
     transition: opacity 300ms, transform 300ms;
   }
-  .chs_navbar a:hover::after,
-  .chs_navbar a:focus::after {
+  .chs_navbar_wide_screen a:hover::after,
+  .chs_navbar_wide_screen a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
   .chs_small_screen {
     display: none;
+  }
+  .chs_navbar_small_screen {
+    display: none;
+  }
+  .chs_navbar_wide_screen {
+    overflow: hidden;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #1d9bf0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 25%;
+    width: 50%;
   }
 }
 @media (max-width: 799px) {
@@ -231,6 +238,19 @@ strong {
   }
   .chs_wide_screen {
     display: none;
+  }
+  .chs_navbar_wide_screen {
+    display: none;
+  }
+  .chs_navbar_small_screen {
+    overflow: hidden;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #1d9bf0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-left: 50px;
   }
 }
 @media (max-width: 375px) {
