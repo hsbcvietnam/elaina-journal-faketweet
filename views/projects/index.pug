@@ -42,12 +42,21 @@ block content
   .container-fluid
     .row
       .chs_bg_img_left
-      .col-md-3
-      .col-md-6.chs_navbar(align="center")
-        ul
-          li.chs_link
-            a(href='https://www.facebook.com/elaina.journal' target='_blank') Elaina's Journal on Facebook
-          li.chs_link
-            a(href='https://twitter.com/EMTElaina' target='_blank') Elaina on Twitter
-      .col-md-3
+      .col-sm-3
+      .col-sm-6.chs_wide_screen
+        .row
+          .col-sm-12.chs_navbar(align="center")
+            ul
+              li.chs_link
+                a(href='https://www.facebook.com/elaina.journal' target='_blank') Elaina's Journal on Facebook
+              li.chs_link
+                a(href='https://twitter.com/EMTElaina' target='_blank') Elaina on Twitter
+        .row
+          .col-sm-2.chs_profile-pic
+            img(src!= 'https://hsbcvietnam.github.io/elaina-journal-faketweet/public/images/rocket/profile_pic_elaina.jpg', width='80', height='80', alt='')
+      .col-sm-3
       .chs_bg_img_right
+      .col-xs-12.chs_small_screen
+        .row
+          .col-xs-12.chs_navbar.chs_link(align="center")
+            a(href='https://www.facebook.com/elaina.journal' target='_blank') Elaina's Journal

@@ -62,7 +62,7 @@ html, body {
 
 .chs_navbar {
   overflow: hidden;
-  padding: 30px 0;
+  padding: 10px 0;
   background-color: #FFFFFF;
   border-bottom: 2px solid #1d9bf0;
   position: fixed;
@@ -123,7 +123,7 @@ strong {
 @media (max-width: 600px) {
 
 }
-@media (min-width:600px) {
+@media (min-width:800px) {
   .chs_navbar a::after {
     content: '';
     position: absolute;
@@ -136,15 +136,20 @@ strong {
     transform: translate3d(-100%, 0, 0);
     transition: opacity 300ms, transform 300ms;
   }
-
   .chs_navbar a:hover::after,
   .chs_navbar a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+  .chs_small_screen {
+    display: none;
+  }
 }
-@media (max-width: 480px) {
+@media (max-width: 799px) {
   .chs_bg_img_left, .chs_bg_img_right{
+    display: none;
+  }
+  .chs_wide_screen {
     display: none;
   }
 }
