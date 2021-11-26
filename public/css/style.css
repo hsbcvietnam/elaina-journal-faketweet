@@ -60,12 +60,7 @@ html, body {
   width: 25%;
 }
 
-.chs_wide_screen {
-  position: relative;
-  top: 70px;
-}
-
-.chs_small_screen {
+.chs_tweet_body {
   position: relative;
   top: 70px;
 }
@@ -214,9 +209,6 @@ strong {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-  .chs_small_screen {
-    display: none;
-  }
   .chs_navbar_small_screen {
     display: none;
   }
@@ -234,9 +226,6 @@ strong {
 }
 @media (max-width: 799px) {
   .chs_bg_img_left, .chs_bg_img_right{
-    display: none;
-  }
-  .chs_wide_screen {
     display: none;
   }
   .chs_navbar_wide_screen {
