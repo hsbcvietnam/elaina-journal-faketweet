@@ -41,7 +41,7 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 25%;
@@ -53,7 +53,7 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 75%;
@@ -62,12 +62,19 @@ html, body {
 
 .chs_navbar {
   overflow: hidden;
-  padding: 10px 0;
+  height: 70px;
   background-color: #FFFFFF;
   border-bottom: 2px solid #1d9bf0;
   position: fixed;
   top: 0;
-  width: 100%;
+  z-index: 100;
+  left: 25%;
+  width: 50%;
+}
+
+.chs_wide_screen {
+  position: relative;
+  top: 70px;
 }
 
 .chs_navbar ul {
@@ -101,6 +108,79 @@ html, body {
 
 .chs_navbar a {
   overflow: hidden;
+}
+
+.chs_poster_area {
+  height: 120px;
+  position: relative;
+}
+
+.chs_profile_pic {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 20px;
+}
+
+.chs_profile_pic img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+}
+
+.chs_username_area {
+  position: absolute;
+  left: 105px;
+}
+
+.chs_username_poster {
+  font-family: 'chirp-medium-web' !important;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.chs_handle_poster {
+  font-family: 'chirp-regular-web' !important;
+  color: rgb(83, 100, 113);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.chs_content_area {
+  position: relative;
+}
+
+.chs_tweet_area {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
+
+.chs_tweet_text {
+  font-family: 'chirp-regular-web' !important;
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.chs_tweet_img img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ebebeb;
+  border-radius: 20px 20px 20px 20px;
+  display: block;
+}
+
+.vertical_center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 strong {
